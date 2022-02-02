@@ -4,7 +4,7 @@ import os
 from tkinter import font as tkFont
 
 window = tk.Tk()
-window.title('Windows activator')
+window.title('Windows 10/11 activator')
 font = tkFont.Font(family='Helvetica', size=24)
 window.configure(bg='#133C55')
 
@@ -23,8 +23,8 @@ def active(zmienna):
         print('cos')
    
 
-home = tk.Button(text="cos" ,font=tkFont.Font(family='Helvetica', size=16),bg='#59A5D8',fg='#EBEBEB', command=lambda : active('home')).grid(column=1,row=1)
-pro = tk.Button(text="cos" ,font=tkFont.Font(family='Helvetica', size=16),bg='#59A5D8',fg='#EBEBEB', command=lambda : active('pro')).grid(column=1,row=2)
+home = tk.Button(text="home" ,font=tkFont.Font(family='Helvetica', size=16),bg='#59A5D8',fg='#EBEBEB', command=lambda : active('home')).grid(column=1,row=1)
+pro = tk.Button(text="pro" ,font=tkFont.Font(family='Helvetica', size=16),bg='#59A5D8',fg='#EBEBEB', command=lambda : active('pro')).grid(column=1,row=2)
 
 
 
