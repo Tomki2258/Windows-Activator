@@ -11,12 +11,14 @@ window.configure(bg='#133C55')
 tk.Label(text="Windows Activator",font=tkFont.Font(family='Helvetica', size=24),bg='#133C55',fg='#EBEBEB').grid(column=1, row=0)
 
 
-def active(zmienna):
-    if(zmienna=='home'):
+def active(option):
+    #Windows home activation
+    if(option=='home'):
         os.system("slmgr /ipk TX9XD-98N7V-6WMQ6-BX7FG-H8Q99")
         os.system("slmgr /skms s8.uk.to")
         os.system("slmgr /ato")
-    elif(zmienna=='pro'):
+    #Windows PRO activation
+    elif(option=='pro'):
         os.system("slmgr /ipk W269N-WFGWX-YVC9B-4J6C9-T83GX")
         os.system("slmgr /skms s8.uk.to")
         os.system("slmgr /ato")
